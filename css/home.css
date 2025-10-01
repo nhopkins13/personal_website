@@ -1,0 +1,93 @@
+:root {
+  --name-color-on: rgb(35, 14, 48);
+  --education-color-on: rgb(82,28,8);
+  --experience-color-on: rgb(183, 235, 151);
+  --paintings-color-on: rgb(158,3,86);
+  --music-color-on: rgb(250,158,125);
+
+  --name-color-off: rgb(27,73,125);
+  --education-color-off: rgb(245,232,230);
+  --experience-color-off: black;
+  --paintings-color-off: rgb(250,203,232);
+  --music-color-off: black;
+}
+
+/* section background images */
+.bg {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 90vh; 
+  width: 100%;
+  text-align: center;
+  display: table; 
+}
+#bg-name {
+  height: 100vh;
+  background-image: url("../images/name_bg.JPG");
+}
+#bg-education {
+  background-image: url("../images/education_bg.png");
+}
+#bg-experience {
+  background-image: url("../images/experience_bg.JPG");
+}
+#bg-paintings {
+  background-image: url("../images/painting_bg.jpeg");
+}
+#bg-music {
+  background-image: url("../images/music_bg.png");
+}
+
+/* titles*/
+.title {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 200px;
+  text-align: center;
+}
+#name{
+  font-size: 300px;
+  color: var(--name-color-off);
+}
+#education{
+  color: var(--education-color-off);
+}
+#experience{
+  color: var(--experience-color-off);
+}
+#paintings{
+  color: var(--paintings-color-off);
+}
+#music{
+  color: var(--music-color-off);
+}
+
+/* hover effects */
+#name:hover { color: var(--name-color-on); }
+#education:hover { color: var(--education-color-on); }
+#experience:hover { color: var(--experience-color-on); }
+#paintings:hover { color: var(--paintings-color-on); }
+#music:hover { color: var(--music-color-on); }
+
+/* scroll sections between panels */
+.scroll{
+  height: 30px;
+}
+#scroll-name {
+  background-color: var(--name-color-on);
+}
+#scroll-education {
+  background-color: var(--education-color-on);
+}
+#scroll-experience {
+  background-color: var(--experience-color-on);
+}
+#scroll-paintings {
+  background-color: var(--paintings-color-on);
+}
+#scroll-music {
+  background-color: var(--music-color-on);
+}
