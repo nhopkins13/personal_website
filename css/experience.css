@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 200px 50px 50px 50px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: left;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.job {
+  margin-bottom: 30px;
+}
+
+.job h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.job .date {
+  font-size: 1.5rem;
+  color: #444;
+  margin: 5px 0 10px;
+}
+
+.job p {
+  margin: 5px 0;
+  font-size: 1.5rem;
+}
+
+.task {
+  margin-left: 20px;
+  font-size: 1.5rem;
+}

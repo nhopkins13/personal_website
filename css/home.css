@@ -5,11 +5,11 @@
   --paintings-color-on: rgb(158,3,86);
   --music-color-on: rgb(250,158,125);
 
-  --name-color-off: rgb(27,73,125);
-  --education-color-off: rgb(245,232,230);
-  --experience-color-off: black;
-  --paintings-color-off: rgb(250,203,232);
-  --music-color-off: black;
+  --name-color-off: rgb(58,120,250);
+  --education-color-off: rgb(255, 231, 246);
+  --experience-color-off: rgb(51, 29, 43);
+  --paintings-color-off: rgb(255, 161, 219);
+  --music-color-off: rgb(0,0,0);
 }
 
 /* section background images */
@@ -21,7 +21,14 @@
   height: 90vh; 
   width: 100%;
   text-align: center;
-  display: table; 
+  justify-content: center;
+  align-items: center;
+  display: flex; 
+}
+#pixel-name {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 #bg-name {
   height: 100vh;

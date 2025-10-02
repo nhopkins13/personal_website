@@ -37,8 +37,15 @@ li a {
   text-decoration: none;
 }
 
+li a img {
+  width: 130px;   
+  height: 120px;  
+  margin-right: 20px; 
+  object-fit: contain;
+}
+
 li a:hover {
-  background-color: var(--name-color); 
+  background-color: rgb(247, 198, 229); 
   color: darkred;
 }
 
@@ -62,9 +69,16 @@ footer {
 
 .footer-container {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
   align-items: center;
   gap: 30px;
+  flex: 1;
+}
+
+.footer-art{
+    font-size: 30px;
+    font-weight: bold;
+    text-align:left;
 }
 
 .footer-credit {
