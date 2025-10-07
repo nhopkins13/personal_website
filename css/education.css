@@ -1,57 +1,96 @@
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   background-color: #f8f9fc;
   margin: 0;
   padding: 0;
   color: #333;
   font-size: 1.8rem;
   text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .wrapper {
-  max-width: 900px;
-  margin: 200px 50px 50px 50px;
-  padding: 20px;
+  margin: 15rem 5rem 5rem 5rem;
+  padding: 2rem;
+  flex: 1;
 }
 
 h1 {
   text-align: left;
-  font-size: 4rem;
-  margin-bottom: 30px;
+  font-size: 8rem;
+  margin-bottom: 3rem;
+  font-family: 'Times New Roman', Times, serif;
   color: #2c3e50;
+}
+
+#map {
+    height: 40vh;
+    width: 60%;
+    margin: 4rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+    justify-content: center;
+}
+
+.big-tooltip {
+  background-color: #fff !important;
+  border: 2px solid #1a5276 !important;
+  border-radius: 12px !important;
+  padding: 10px 15px !important;
+  font-size: 1.6rem !important;
+  font-weight: bold !important;
+  color: #1a5276;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.edu-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.edu-logo {
+  width: 10vw; 
+  height: 8vh; 
+  object-fit: contain;
+  margin-right: 2rem;
 }
 
 .edu-card {
   background: #fff;
   border-radius: 12px;
+  width: 100%;
   padding: 25px 30px;
   margin-bottom: 25px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
 }
 
 .edu-header h2 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 5rem;
   color: #1a5276;
   text-align: left;
 }
 
 .edu-header span {
-  font-size: 1.5rem;
+  font-size: 3rem;
   color: #555;
   display: block;
   margin-top: 5px;
 }
 
 .edu-details p {
-  margin: 8px 0;
+  margin: 0.5rem 0;
   line-height: 1.6;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .activities {
-  margin-top: 12px;
-  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  font-size:2rem;
   color: #555;
 }

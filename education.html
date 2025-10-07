@@ -6,49 +6,84 @@
   <title>aboutneely-education</title>
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/education.css">
+
+  <!-- ✅ Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
 </head>
 <body>
 
   <div id="navbar"></div>
 
   <div class="wrapper">
-    <h1>Education</h1>
+    <h1>EDUCATION</h1>
 
+        <div class="edu-container">
+    <img src="../images/logos/mines.png" alt="Colorado School of Mines Logo" class="edu-logo">
     <div class="edu-card">
-      <div class="edu-header">
+        <div class="edu-header">
         <h2>Colorado School of Mines</h2>
         <span>05/2022 – 12/2025 · Golden, Colorado</span>
-      </div>
-      <div class="edu-details">
+        </div>
+        <div class="edu-details">
         <p><strong>B.S. in Computer Science</strong> | Graduation: Dec 2025 | GPA: 3.84</p>
         <div class="activities">
-          <strong>Activities:</strong> Pi Beta Phi Colorado Delta Member, Society of Women Engineers
+            <strong>Activities:</strong> Pi Beta Phi Colorado Delta Member, Society of Women Engineers
         </div>
-      </div>
+        </div>
+    </div>
     </div>
 
+    <div class="edu-container">
+    <img src="../images/logos/bme.png" alt="Budapest University Logo" class="edu-logo">
     <div class="edu-card">
-      <div class="edu-header">
+        <div class="edu-header">
         <h2>Budapest University of Technology and Economics</h2>
         <span>08/2025 – 12/2025 · Budapest, Hungary</span>
-      </div>
-      <div class="edu-details">
+        </div>
+        <div class="edu-details">
         <p><strong>Semester Study Abroad</strong></p>
-      </div>
+        </div>
+    </div>
     </div>
 
+    <div class="edu-container">
+    <img src="../images/logos/algebra.png" alt="Algebra University Logo" class="edu-logo">
     <div class="edu-card">
-      <div class="edu-header">
+        <div class="edu-header">
         <h2>Algebra University</h2>
         <span>06/2023 – 07/2023 · Zagreb, Croatia</span>
-      </div>
-      <div class="edu-details">
+        </div>
+        <div class="edu-details">
         <p><strong>Summer Study Abroad</strong></p>
-      </div>
+        </div>
     </div>
+    </div>
+
+    <div class="edu-container">
+    <img src="../images/logos/sms.png" alt="Shawnee Mission South Logo" class="edu-logo">
+    <div class="edu-card">
+        <div class="edu-header">
+        <h2>Shawnee Mission South</h2>
+        <span>08/2018 – 05/2022 · Overland Park, Kansas</span>
+        </div>
+        <div class="edu-details">
+        <p><strong>High School Diploma</strong> | Graduated Summa Cum Laude | AP Scholar</p>
+        <div class="activities">
+            <strong>Activities:</strong> Varsity Tennis, Yearbook Sports Section Editor, National Honor Society, Track & Field
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="map"></div>
+
   </div>
 
   <div id="footer"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="js/education-map.js"></script>
   <script src="js/navbar.js"></script>
   <script src="js/footer.js"></script>
 </body>

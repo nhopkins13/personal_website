@@ -12,53 +12,95 @@
   --music-color-off: rgb(0,0,0);
 }
 
-/* section background images */
+.wrapper{
+  flex: 1;
+  padding-top: 8rem;
+}
+
 .bg {
+  position: relative;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center ;
   height: 90vh; 
   width: 100%;
   text-align: center;
   justify-content: center;
   align-items: center;
   display: flex; 
-}
-#pixel-name {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-#bg-name {
-  height: 100vh;
-  background-image: url("../images/name_bg.JPG");
-}
-#bg-education {
-  background-image: url("../images/education_bg.png");
-}
-#bg-experience {
-  background-image: url("../images/experience_bg.JPG");
-}
-#bg-paintings {
-  background-image: url("../images/painting_bg.jpeg");
-}
-#bg-music {
-  background-image: url("../images/music_bg.png");
+  overflow: hidden;
+  flex-direction: column;
 }
 
-/* titles*/
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bg-name::before {
+  position: absolute;
+  inset: 0; 
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.9;
+  z-index: 0; 
+}
+
+.pixel-name {
+  display: flex;
+  flex-wrap: wrap;      
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;     
+  margin-bottom: 2rem;
+  z-index: 1; 
+  position: relative;
+}
+
+.pixel-name img {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 95%;
+}
+
+#bg-name {
+  height: 100vh;
+  padding-top: 27vh;
+  justify-content: flex-start;
+  background-image: url("../images/home-bgs/name.JPG");
+}
+#bg-education {
+  background-image: url("../images/home-bgs/education.JPG");
+}
+#bg-experience {
+  background-image: url("../images/home-bgs/experience.JPG");
+}
+#bg-paintings {
+  background-image: url("../images/home-bgs/painting.jpeg");
+}
+#bg-music {
+  background-image: url("../images/home-bgs/music.png");
+}
+
 .title {
   display: table-cell;
   vertical-align: middle;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 200px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14rem;
+  font-weight: bolder;
   text-align: center;
 }
-#name{
-  font-size: 300px;
-  color: var(--name-color-off);
-}
+
 #education{
   color: var(--education-color-off);
 }
@@ -72,16 +114,13 @@
   color: var(--music-color-off);
 }
 
-/* hover effects */
-#name:hover { color: var(--name-color-on); }
 #education:hover { color: var(--education-color-on); }
 #experience:hover { color: var(--experience-color-on); }
 #paintings:hover { color: var(--paintings-color-on); }
 #music:hover { color: var(--music-color-on); }
 
-/* scroll sections between panels */
 .scroll{
-  height: 30px;
+  height: 1vh;
 }
 #scroll-name {
   background-color: var(--name-color-on);
@@ -97,4 +136,49 @@
 }
 #scroll-music {
   background-color: var(--music-color-on);
+}
+
+.typewriter-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-inline: clamp(1rem, 6vw, 6rem);
+  min-height: 5rem;
+  margin-top: 3rem;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.typewriter-container p {
+  display: block;
+  width: 100%;
+  max-width: min(80%, 70ch);
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  background: rgb(250,232,193);
+  color: black;
+  font-family: 'Courier New', monospace;
+  font-size: 4rem;
+  line-height: 1.15;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: .1rem;
+  font-weight: bolder;
+  color: red;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
 }
