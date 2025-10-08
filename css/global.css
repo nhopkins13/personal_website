@@ -75,37 +75,39 @@ footer {
   font-family: "Courier New", Courier, monospace;
   padding: 10vh 10%;
   width: 100%;
-  justify-content: space-between;
 }
 
 .footer-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 50px;
+  justify-content: center;
   border-bottom: 2px solid rgba(139, 0, 0, 0.2);
-  padding-bottom: 40px;
+  padding: 20px 80px 40px;
+  gap: 100px;
+  width: 100%;
 }
 
 .footer-profile img {
-  width: 20vh;
-  height: 20vh;
+  width: 25vh;
+  height: 25vh;
   border-radius: 50%;
   object-fit: cover;
 }
 
 .footer-contact {
   display: grid;
-  grid-template-columns: repeat(2, minmax(20rem, 1fr));
-  gap: 3rem 10rem;
-  font-size: 3rem;
+  grid-template-columns: repeat(2, minmax(80rem, 1fr));
+  gap: 3rem 8rem;
+  font-size: 3.5rem;
   flex: 1;
+  padding: 20px 20px 20px 20px;
+  width: 100%;
 }
 
 .footer-contact h3 {
   grid-column: 1 / -1;
-  font-size: 5rem;
-  margin-bottom: 3rem;
+  font-size: 6rem;
+  margin-bottom: 4rem;
   color: darkred;
 }
 
@@ -128,7 +130,7 @@ footer a:hover {
 
 .footer-bottom {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-top: 2rem;
   color: darkred;
 }

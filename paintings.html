@@ -6,16 +6,27 @@
   <title>aboutneely-paintings</title>
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/paintings.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
 </head>
 <body>
 
   <div id="navbar"></div>
 
-  <div class="wrapper">
+<main id="gallery-container"></main>
+
+  <div id="lightbox-modal" class="lightbox-hidden">
+    <span id="lightbox-close">&times;</span>
+
+    <span id="lightbox-prev" class="lightbox-arrow">&#10094;</span>
+    <span id="lightbox-next" class="lightbox-arrow">&#10095;</span>
+
+    <img id="lightbox-image" src="" alt="Painting" />
   </div>
 
   <div id="footer"></div>
   <script src="js/navbar.js"></script>
   <script src="js/footer.js"></script>
+  <script src="js/paintings.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
