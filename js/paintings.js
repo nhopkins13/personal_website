@@ -9,7 +9,7 @@ function getPaintingsForYear(year) {
     case '2021':
       return ['cardrawing-2021.jpeg', 'fox-2021.jpg', 'lenly-2021.JPG', 'lenlydrawing-2019.jpg', 'collage-2021.jpeg'];
     case '2020':
-      return ['flowers-2020.jpeg', 'me-2020.jpeg', 'tim-2020.jpeg', 'lana-2020.jpg', 'billie-2020.jpeg'];
+      return ['flowers-2020.jpeg', 'me-2020.jpeg', 'tim-2020.jpeg', 'lana-2020.JPG', 'billie-2020.jpeg'];
     case '2019':
       return [
         'birds-2019.jpeg', 'cat-2019.jpeg', 'lemons-2019.jpeg', 'me2-2019.jpeg', 'textile-2019.jpeg', 'cats-2019.jpeg',

@@ -30,7 +30,7 @@ ul.navbar li a {
   justify-content: center;
   align-items: center;
   height: 100%;
-  font-size: clamp(0.8rem, 2.5vw, 2rem);
+  font-size: clamp(0.8rem, 2.5vw, 1.6rem);
   font-family: 'Courier New', Courier, monospace;
   font-style: oblique;
   text-decoration: none;

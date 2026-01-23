@@ -1,6 +1,6 @@
 h1 {
   border-bottom: 1px solid #1a5276;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   color: #2c3e50;
   margin-bottom: 1rem;
 }
@@ -36,7 +36,7 @@ h1 {
 .edu-logo {
   width: clamp(50px, 8vw, 80px);
   object-fit: contain;
-  margin-right: 2px;
+  margin-right: 5px;
 }
 
 .edu-card {
@@ -45,7 +45,7 @@ h1 {
   width: 100%;
   padding: 0.8rem;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .edu-header {
@@ -62,7 +62,7 @@ h2 {
 
 #logo-row {
   width: 80%;
-  margin: 1rem auto 4rem auto;
+  margin: 1rem auto 1rem auto;
   display: flex;
   justify-content: center;
   gap: 1rem;
